@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeTodo } from "../features/todo/todoSlice";
-import { editTodo } from "../features/todo/todoSlice";
+import toast from "react-hot-toast";
 import { FaEdit } from "react-icons/fa";
 
 
@@ -11,6 +11,11 @@ function Todo({handleEdit}) {
   const dispatch = useDispatch();
   
 
+  const handleRemove=(id)=>{
+    toast.success("Sucessfuly removed Todo")
+    
+    dispatch(removeTodo(id))
+  }
   return (
     <>
       <ul className="list-none max-w-[80%] mx-auto">
@@ -31,7 +36,7 @@ function Todo({handleEdit}) {
 
                 {/* remove btn */}
                 <button
-                  onClick={() => dispatch(removeTodo(todo.id))}
+                  onClick={() => handleRemove(todo.id)}
                   className=" text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md cursor-pointer">
                   <svg
                     xmlns="http://www.w3.o

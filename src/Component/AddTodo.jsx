@@ -33,11 +33,11 @@ function AddTodo() {
     if (editID) {
       dispatch(editTodo({id:editID,text:newVal}))
       setEditID(null) 
-      toast.success("Toast updated")
+      toast.success("Todo list updated")
     }else{
       // adding to list
       dispatch(addTodo(newVal));
-      toast.success("Toast added")
+      toast.success("Todo added ")
     }
   };
 
