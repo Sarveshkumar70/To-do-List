@@ -1,12 +1,38 @@
-# React + Vite
+# 📝 TodoList Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient **TodoList application** built using:
+- ⚛️ **React.js** for the frontend
+- 🛠️ **Redux Toolkit** for state management
+- 🎨 **Tailwind CSS** for styling
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Features**
+✅ Add new tasks with ease  
+✅ Edit or delete tasks  
+✅ Persistent state with Redux Toolkit  
+✅ Clean and responsive UI with Tailwind CSS  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ **Tech Stack**
+- **React.js**: Component-based architecture for building the UI  
+- **Redux Toolkit**: Efficient and predictable state management  
+- **Tailwind CSS**: Utility-first styling for fast and responsive design  
+
+---
+
+## 📁 Folder Structure
+/src
+ ├── app
+ │    └── store.js       &nbsp;    # Redux store configuration
+ │
+ ├── components
+ │    ├── AddTodo.jsx        &nbsp;      # Component to add new tasks
+ │    └── Todo.jsx             &nbsp;     # Component to display and manage tasks
+ │
+ ├── features
+ │    └── todoSlice.js       &nbsp;      # Redux slice for todos
+ │
+ └── index.js                &nbsp;      # Main entry point
+
